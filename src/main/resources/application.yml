@@ -1,0 +1,16 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    username: root
+    password: Zyncyp530!
+    url: jdbc:mysql://118.25.137.127:3307/rowing
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  data:
+    redis:
+      host: airrowing.com.cn
+      password: rememberus
+app:
+  version: @project.version@
+  build:
+    time: @timestamp@

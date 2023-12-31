@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.airrowing.system.mapper.LoginMapper">
+
+    <resultMap id="BaseResultMap" type="com.airrowing.system.pojo.Login">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="account" column="account" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="language" column="language" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="INTEGER"/>
+            <result property="telephone" column="telephone" jdbcType="VARCHAR"/>
+            <result property="lastloginip" column="lastLoginIp" jdbcType="VARCHAR"/>
+            <result property="lastlogintime" column="lastLoginTime" jdbcType="VARCHAR"/>
+            <result property="creatorid" column="creatorId" jdbcType="VARCHAR"/>
+            <result property="createtime" column="createTime" jdbcType="VARCHAR"/>
+            <result property="deleted" column="deleted" jdbcType="INTEGER"/>
+            <result property="roleid" column="roleId" jdbcType="VARCHAR"/>
+            <result property="token" column="token" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,account,password,
+        name,avatar,username,
+        language,status,telephone,
+        lastLoginIp,lastLoginTime,creatorId,
+        createTime,deleted,roleId,
+        token
+    </sql>
+</mapper>

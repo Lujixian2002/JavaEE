@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.airrowing.system.mapper.TrainingRecordMapper">
+
+    <resultMap id="BaseResultMap" type="com.airrowing.system.pojo.TrainingRecord">
+        <id property="clubTrainingId" column="club_training_id" jdbcType="INTEGER"/>
+        <id property="userId" column="user_id" jdbcType="INTEGER"/>
+        <result property="registrationTime" column="registration_time" jdbcType="TIMESTAMP"/>
+        <result property="isPresent" column="is_absent" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        club_training_id,user_id,registration_time,
+        is_absent
+    </sql>
+</mapper>

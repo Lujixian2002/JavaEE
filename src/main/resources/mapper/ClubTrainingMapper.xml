@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.airrowing.system.mapper.ClubTrainingMapper">
+
+    <resultMap id="BaseResultMap" type="com.airrowing.system.pojo.ClubTraining">
+            <id property="clubTrainingId" column="club_training_id" jdbcType="INTEGER"/>
+            <result property="clubTrainingName" column="club_training_name" jdbcType="VARCHAR"/>
+            <result property="clubTrainingTime" column="club_training_time" jdbcType="TIMESTAMP"/>
+            <result property="clubTrainingLocation" column="club_training_location" jdbcType="VARCHAR"/>
+            <result property="clubTrainingNote" column="club_training_note" jdbcType="VARCHAR"/>
+            <result property="clubTrainingNumber" column="club_training_number" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        club_training_id,club_training_name,club_training_time,
+        club_training_location,club_training_note,club_training_number
+    </sql>
+</mapper>
